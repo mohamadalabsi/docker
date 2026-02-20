@@ -38,14 +38,19 @@ public class DockerApplication {
 //	 we make the configuration and put the project inside it and run it
 
 
+//	 forget about the first way and we will do the second way
+
 //  2 the second way is to have docker file inside each project and thats it but this is if we have
 // a lot of projects and we should not do the first way but at the end we just in these to ways
 //to automate this we use docker file for all projects and with one command we can create the image
-//	first we clean and create jar file , then dockerfile more steps in dockerfile
+//	first we clean and create jar file (clean package ) without skipping tests , then dockerfile
+//	more steps	in dockerfile , in docker file we can automate the clean package instead doing it manually
+//	anytime we make a change in the code we have to clean and create jar file and then create/build
+//	the image again and run the container again
 
 //	then is docker compose
 //	 before that i want to create a quick spring boot project here
-//	now it is used to work with multiple containers but still we have to make docker file
+//	now it is used to work with multiple images/containers but still we have to make docker file
 //	so at the end the is a docker file inside each project or service and then docker compose to
 //	make multiple containers , more steps in docker compose
 
